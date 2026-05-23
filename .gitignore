@@ -1,0 +1,14 @@
+GP_dark.html
+assets/pdf-text.txt
+assets/pdf-images/*
+!assets/pdf-images/rossukon_2.png
+assets/images/p10_*
+assets/images/p11_*
+assets/images/p12_*
+assets/images/p14_*
+assets/images/p15_*
+assets/images/p16_*
+assets/images/p17_*
+assets/images/p9_*
+assets/images/rossukon.png
+*.pdf

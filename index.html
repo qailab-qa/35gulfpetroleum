@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>35 Gulf Petroleum | Strategic Upstream Operations</title>
+  <meta name="description" content="Northern Gulf Petroleum and Gulf Petroleum Myanmar — strategic upstream energy operations across Southeast Asia under 35 Gulf Petroleum LLC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --shell-yellow:   #d6a100;
+      --shell-yellow-d: #b88a00;
+      --shell-red:      #DD1D21;
+      --shell-red-d:    #B8181C;
+      --bg-base:        #0c0d0e;
+      --bg-deep:        #111418;
+      --bg-panel:       #181c21;
+      --bg-muted:       #252b33;
+      --border:         #2e3540;
+      --text-dim:       #5a6472;
+      --text-mid:       #8a97a6;
+      --text-light:     #c8d2dc;
+      --text-white:     #f0f3f6;
+      --max:            1280px;
+      --nav-h:          72px;
+      --radius:         4px;
+      --shadow:         0 8px 32px rgba(0,0,0,0.45);
+      --transition:     0.25s ease;
+      --font-body:      'Barlow', sans-serif;
+      --font-display:   'Cormorant Garamond', serif;
+      --font-label:     'Barlow Condensed', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      font-weight: 300;
+      background: var(--bg-base);
+      color: var(--text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: 0; z-index: 200;
+      padding: 12px 20px; background: var(--shell-yellow); color: var(--bg-base);
+      font-weight: 600; text-decoration: none;
+    }
+    .skip-link:focus { left: 0; }
+
+    /* ── NAV ── */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      background: linear-gradient(to bottom, rgba(12,13,14,0.95), rgba(12,13,14,0));
+      border-bottom: 1px solid transparent;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    .site-header.scrolled {
+      background: rgba(12,13,14,0.97);
+      border-color: var(--border);
+    }
+
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto;
+      height: 100%; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; flex-shrink: 0;
+    }
+    .logo-text {
+      font-family: var(--font-label);
+      font-size: 20px; font-weight: 600; color: var(--text-white);
+      letter-spacing: 0.12em; text-transform: uppercase; line-height: 1.2;
+    }
+    .logo-text span {
+      display: block; font-family: var(--font-body);
+      font-size: 11px; font-weight: 500;
+      color: var(--text-mid); letter-spacing: 0.04em;
+      text-transform: none;
+    }
+
+    .nav-links {
+      display: flex; align-items: center; gap: 32px; list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-label);
+      font-size: 12px; font-weight: 500; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--text-mid);
+      text-decoration: none; transition: color var(--transition);
+    }
+    .nav-links a:hover { color: var(--text-white); }
+
+    .nav-links a.nav-cta {
+      display: inline-flex; align-items: center;
+      padding: 10px 22px;
+      background: var(--shell-yellow);
+      color: var(--bg-base);
+      font-family: var(--font-label);
+      font-size: 12px; font-weight: 600; letter-spacing: 0.14em;
+      text-transform: uppercase; text-decoration: none;
+      border-radius: var(--radius);
+      transition: background var(--transition), color var(--transition), transform var(--transition);
+    }
+    .nav-links a.nav-cta:hover {
+      background: var(--shell-yellow-d);
+      color: var(--bg-base);
+      transform: translateY(-1px);
+    }
+
+    .nav-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      width: 44px; height: 44px; padding: 8px;
+    }
+    .nav-toggle span {
+      display: block; height: 2px; background: var(--text-white);
+      margin: 6px 0; transition: var(--transition);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 60px 100px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background:
+        linear-gradient(160deg, rgba(214,161,0,0.06) 0%, transparent 45%),
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(221,29,33,0.08) 0%, transparent 60%),
+        linear-gradient(to bottom, rgba(12,13,14,0.25) 0%, rgba(12,13,14,0.88) 72%, var(--bg-base) 100%),
+        url('https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p1_0.jpg') center/cover no-repeat;
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 780px; }
+
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 16px;
+      font-family: var(--font-label);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--shell-yellow);
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 40px; height: 1px; background: var(--shell-yellow);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(52px, 6vw, 88px);
+      font-weight: 300; line-height: 1.05; color: var(--text-white);
+      opacity: 0;
+      animation: fadeUp 0.9s 0.4s forwards;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--shell-yellow);
+    }
+
+    .hero-lead {
+      margin-top: 28px; font-size: 15px; font-weight: 300;
+      line-height: 1.7; color: var(--text-mid); max-width: 520px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.6s forwards;
+    }
+
+    .hero-actions {
+      margin-top: 44px; display: flex; flex-wrap: wrap; gap: 16px;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.8s forwards;
+    }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px;
+      font-family: var(--font-label);
+      font-size: 12px; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      text-decoration: none; border-radius: var(--radius);
+      transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+    }
+    .btn-primary {
+      background: var(--shell-yellow); color: var(--bg-base);
+    }
+    .btn-primary:hover { background: var(--shell-yellow-d); transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent; color: var(--text-light);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--text-mid); color: var(--text-white); }
+
+    .hero-scroll {
+      position: absolute; right: 60px; bottom: 28px; z-index: 2;
+      writing-mode: vertical-rl; text-orientation: mixed;
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--text-dim);
+      display: flex; align-items: center; gap: 14px;
+      opacity: 0;
+      animation: fadeUp 1s 1.2s forwards;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px; height: 60px;
+      background: linear-gradient(to bottom, var(--text-dim), transparent);
+      animation: scrollLine 2s 1.5s infinite;
+    }
+
+    .hero-stats {
+      position: absolute; right: 60px; top: 50%;
+      z-index: 1; display: flex; flex-direction: column; gap: 32px;
+      opacity: 0;
+      animation: fadeLeftCentered 0.9s 1s forwards;
+    }
+    .hero-stat { text-align: right; }
+    .hero-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 36px; font-weight: 300;
+      color: var(--shell-yellow); line-height: 1;
+    }
+    .hero-stat span {
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 500; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--text-dim);
+      margin-top: 6px; display: block;
+    }
+
+    /* ── TICKER ── */
+    .ticker {
+      background: var(--bg-muted); color: #fff;
+      overflow: hidden; height: 44px;
+      display: flex; align-items: center;
+    }
+    .ticker-track {
+      display: flex; gap: 64px;
+      animation: ticker 35s linear infinite;
+      white-space: nowrap;
+    }
+    .ticker-item {
+      font-family: var(--font-label);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: rgba(255,255,255,0.6);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .ticker-item strong { color: var(--shell-yellow); font-weight: 700; }
+    .ticker-sep { color: var(--shell-red); opacity: 0.8; }
+
+    @keyframes ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 96px 32px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .section-eyebrow {
+      font-family: var(--font-label);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.28em;
+      text-transform: uppercase; color: var(--shell-yellow);
+      margin-bottom: 12px;
+      display: flex; align-items: center; gap: 14px;
+    }
+    .section-eyebrow::before {
+      content: ''; width: 28px; height: 1px; background: var(--shell-yellow);
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(38px, 4vw, 58px);
+      font-weight: 300; line-height: 1.1; color: var(--text-white);
+    }
+    .section-title em { font-style: italic; color: var(--shell-yellow); }
+
+    /* ── ABOUT ── */
+    .about { background: var(--bg-deep); }
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+      align-items: start; margin-top: 48px;
+    }
+    .about-copy p {
+      margin-top: 20px; font-size: 15px; font-weight: 300;
+      line-height: 1.85; color: var(--text-mid);
+    }
+    .about-copy .highlight {
+      margin-top: 0; margin-bottom: 8px; padding: 0;
+      background: none; border: none; box-shadow: none;
+      font-family: var(--font-display);
+      font-size: 22px; font-weight: 300; color: var(--text-white);
+    }
+
+    .pillars { display: flex; flex-direction: column; gap: 0; }
+    .pillar {
+      display: grid; grid-template-columns: 48px 1fr; gap: 20px;
+      padding: 28px 0; border-bottom: 1px solid var(--border);
+    }
+    .pillar:first-child { border-top: 1px solid var(--border); }
+    .pillar-num {
+      width: 48px; height: 48px;
+      background: var(--shell-yellow); color: var(--bg-base);
+      font-family: var(--font-display);
+      font-size: 13px; font-weight: 400;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: var(--radius);
+    }
+    .pillar h3 {
+      font-family: var(--font-label);
+      font-size: 16px; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--text-white); margin-bottom: 6px;
+    }
+    .pillar p { font-size: 14px; font-weight: 300; color: var(--text-dim); line-height: 1.7; }
+
+    .sectors {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px;
+    }
+    .sector-tag {
+      padding: 8px 14px;
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      background: var(--bg-muted); border: 1px solid var(--border);
+      color: var(--text-mid); border-radius: var(--radius);
+    }
+
+    /* ── COMPANIES ── */
+    .companies { background: var(--bg-base); }
+    .company-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+      margin-top: 48px;
+    }
+    .company-card {
+      background: var(--bg-panel); border: 1px solid var(--border);
+      padding: 36px 32px; border-radius: var(--radius);
+    }
+    .company-card h3 {
+      font-family: var(--font-label);
+      font-size: 16px; font-weight: 600; color: var(--shell-yellow);
+      margin-bottom: 16px; letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .company-card ul {
+      list-style: none; display: flex; flex-direction: column; gap: 12px;
+    }
+    .company-card li {
+      font-size: 14px; font-weight: 300; color: var(--text-mid); line-height: 1.65;
+      padding-left: 18px; position: relative;
+    }
+    .company-card li::before {
+      content: ''; position: absolute; left: 0; top: 8px;
+      width: 6px; height: 6px; background: var(--shell-red);
+      border-radius: 50%;
+    }
+
+    /* ── PRODUCING ASSETS ── */
+    .assets { background: var(--bg-deep); }
+    .producing-asset {
+      margin-top: 64px; padding-top: 64px;
+      border-top: 1px solid var(--border);
+    }
+    .producing-asset:first-of-type {
+      margin-top: 48px; padding-top: 0; border-top: none;
+    }
+    .producing-asset-header {
+      margin-bottom: 28px;
+    }
+    .producing-asset-title {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 300; color: var(--text-white);
+      margin: 8px 0 0;
+    }
+    .producing-asset-title em { font-style: italic; color: var(--shell-yellow); }
+    .producing-asset-panel {
+      display: grid;
+      grid-template-columns: minmax(280px, 42%) 1fr;
+      gap: 0;
+      align-items: stretch;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg-panel);
+    }
+    .producing-asset-panel--media-right {
+      grid-template-columns: 1fr minmax(400px, 58%);
+    }
+    .producing-asset-media {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      background: var(--bg-base);
+      border-right: 1px solid var(--border);
+    }
+    .producing-asset-panel--media-right .producing-asset-media {
+      border-right: none;
+      border-left: 1px solid var(--border);
+      background: var(--bg-panel);
+      justify-content: flex-end;
+    }
+    .producing-asset-media figure {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      min-height: 0;
+    }
+    .producing-asset-media figure + figure {
+      border-top: 1px solid var(--border);
+    }
+    .producing-asset-media .figure-img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-base);
+      min-height: 200px;
+      overflow: hidden;
+    }
+    .producing-asset-media .figure-img img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .producing-asset-media .figure-img--photo img {
+      object-fit: cover;
+      min-height: 240px;
+      max-height: 320px;
+    }
+    .producing-asset-media .figure-img--map {
+      padding: 16px;
+      background: var(--bg-deep);
+    }
+    .producing-asset-media .figure-img--map img {
+      object-fit: contain;
+      max-height: 360px;
+      width: auto;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .producing-asset-media .figure-img--diagram img {
+      object-fit: contain;
+      padding: 12px;
+      max-height: 520px;
+    }
+    .producing-asset-panel--media-right .figure-img--diagram {
+      flex: 1;
+      min-height: 0;
+      background: transparent;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 148px 12px 16px;
+    }
+    .producing-asset-panel--media-right .figure-img--diagram img {
+      width: 100%;
+      height: auto;
+      min-height: 0;
+      max-height: none;
+      object-fit: contain;
+      padding: 0;
+      background: transparent;
+    }
+    .producing-asset-media figcaption {
+      flex-shrink: 0;
+      padding: 14px 20px;
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-mid);
+      background: var(--bg-muted);
+      border-top: 1px solid var(--border);
+    }
+    .producing-asset-body {
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 0;
+    }
+    .location-note {
+      margin: 0 0 28px;
+      padding: 18px 22px;
+      background: rgba(214, 161, 0, 0.08);
+      border-left: 3px solid var(--shell-yellow);
+      font-size: 15px; font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+    .spec-group {
+      margin-bottom: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .spec-group:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .spec-group h4 {
+      font-family: var(--font-label);
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--shell-yellow);
+      margin-bottom: 12px;
+    }
+    .spec-group ul { list-style: none; }
+    .spec-group li {
+      font-size: 14px; font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.65;
+      padding: 7px 0 7px 16px;
+      position: relative;
+    }
+    .spec-group > ul > li + li { margin-top: 2px; }
+    .spec-group li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.65em;
+      width: 5px;
+      height: 5px;
+      background: var(--shell-red);
+      border-radius: 50%;
+    }
+    .spec-group li ul {
+      margin-top: 8px;
+      padding-left: 4px;
+    }
+    .spec-group li ul li {
+      font-size: 13px;
+      color: var(--text-dim);
+      padding-left: 14px;
+    }
+    .spec-group li ul li::before {
+      width: 4px;
+      height: 4px;
+      background: var(--text-dim);
+    }
+
+    #assets-yetagun .spec-group {
+      margin-bottom: 18px;
+      padding-bottom: 18px;
+    }
+    #assets-yetagun .spec-group h4 {
+      margin-bottom: 6px;
+    }
+    #assets-yetagun .spec-group li {
+      line-height: 1.45;
+      padding: 2px 0 2px 16px;
+    }
+    #assets-yetagun .spec-group > ul > li + li {
+      margin-top: 0;
+    }
+    #assets-yetagun .spec-group li ul {
+      margin-top: 4px;
+    }
+    #assets-yetagun .spec-group li ul li {
+      padding: 1px 0 1px 14px;
+      line-height: 1.4;
+    }
+    @media (min-width: 1025px) {
+      .producing-asset-media {
+        position: sticky;
+        top: calc(var(--nav-h) + 24px);
+        align-self: start;
+        max-height: calc(100vh - var(--nav-h) - 48px);
+        overflow-y: auto;
+      }
+    }
+
+    /* ── DUAL LEADERSHIP ── */
+    .leaders-dual {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+      margin-top: 48px;
+    }
+    .leader-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .leader-card img {
+      width: 100%; max-width: 280px; aspect-ratio: 3/4;
+      object-fit: cover; border-radius: var(--radius);
+      border: 3px solid var(--shell-yellow);
+      margin-bottom: 24px;
+    }
+    .leader-card .quote {
+      font-family: var(--font-display);
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 300; font-style: italic;
+      margin-top: 0; line-height: 1.55;
+    }
+    .leader-card .quote p + p { margin-top: 1em; }
+    .leader-card .quote-attr {
+      margin-top: 20px; padding-top: 16px;
+      border-top: 2px solid var(--border);
+      display: block;
+    }
+    .leader-card .quote-attr strong {
+      font-family: var(--font-label);
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--shell-yellow);
+    }
+    .leader-card .quote-attr span {
+      font-size: 12px; font-weight: 300;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* ── CORE OPERATIONS (GP_dark) ── */
+    .operations { background: var(--bg-base); }
+    .ops-header {
+      display: flex; justify-content: space-between; align-items: flex-end;
+      flex-wrap: wrap; gap: 24px; margin-bottom: 64px;
+    }
+    .ops-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;
+    }
+    .op-card {
+      position: relative; overflow: hidden;
+      aspect-ratio: 3/4; cursor: pointer;
+    }
+    .op-card img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.6s ease;
+      filter: brightness(0.55) saturate(0.7);
+    }
+    .op-card:hover img {
+      transform: scale(1.04);
+      filter: brightness(0.45) saturate(0.6);
+    }
+    .op-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(12,13,14,0.9) 0%, transparent 55%);
+      padding: 36px 32px;
+      display: flex; flex-direction: column; justify-content: flex-end;
+    }
+    .op-tag {
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 600; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--shell-yellow);
+      margin-bottom: 10px;
+    }
+    .op-title {
+      font-family: var(--font-display);
+      font-size: 28px; font-weight: 400; color: var(--text-white);
+      line-height: 1.15;
+    }
+    .op-desc {
+      font-size: 13px; font-weight: 300; line-height: 1.65;
+      color: var(--text-mid); margin-top: 12px;
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .op-card:hover .op-desc { max-height: 100px; }
+    .op-arrow {
+      margin-top: 20px;
+      font-family: var(--font-label);
+      font-size: 11px; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--shell-yellow);
+      display: flex; align-items: center; gap: 10px;
+      opacity: 0; transition: opacity 0.3s;
+    }
+    .op-arrow::after { content: '→'; }
+    .op-card:hover .op-arrow { opacity: 1; }
+
+    /* ── TIMELINE ── */
+    .milestones { background: var(--bg-panel); }
+    .timeline { margin-top: 56px; position: relative; }
+    .timeline::before {
+      content: ''; position: absolute; left: 100px; top: 0; bottom: 0;
+      width: 2px; background: var(--border);
+    }
+    .tm-row {
+      display: grid; grid-template-columns: 100px 1fr;
+      gap: 40px; padding: 32px 0;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .tm-row:last-child { border-bottom: none; }
+    .tm-year {
+      font-family: var(--font-display);
+      font-size: 42px; font-weight: 300; color: var(--bg-muted);
+      text-align: right; padding-right: 8px;
+      transition: color var(--transition);
+    }
+    .tm-row:hover .tm-year { color: var(--shell-yellow); }
+    .tm-dot {
+      position: absolute; left: 91px; top: 40px;
+      width: 16px; height: 16px; border-radius: 50%;
+      background: var(--bg-panel); border: 2px solid var(--border);
+      transition: border-color var(--transition), background var(--transition);
+    }
+    .tm-row:hover .tm-dot {
+      border-color: var(--shell-yellow); background: var(--shell-yellow);
+    }
+    .tm-content h3 {
+      font-family: var(--font-label);
+      font-size: 18px; font-weight: 600; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--text-white); margin-bottom: 8px;
+    }
+    .tm-content p {
+      font-size: 14px; font-weight: 300; color: var(--text-dim);
+      line-height: 1.75; max-width: 560px;
+    }
+    .badge {
+      display: inline-block; margin-top: 14px;
+      padding: 5px 14px;
+      font-family: var(--font-label);
+      font-size: 10px; font-weight: 600;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      border: 1px solid var(--shell-yellow); color: var(--shell-yellow);
+      background: transparent;
+    }
+
+    /* ── LEADERSHIP ── */
+    .leadership {
+      background: var(--bg-base); color: #fff;
+      position: relative; overflow: hidden;
+    }
+    .leadership::before {
+      content: '';
+      position: absolute; top: 0; right: 0; width: 40%; height: 100%;
+      background: var(--shell-red); opacity: 0.15;
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .leadership-grid {
+      display: grid; grid-template-columns: 1fr 380px; gap: 64px;
+      align-items: center; position: relative; z-index: 1;
+    }
+    .leadership .section-eyebrow { color: var(--shell-yellow); }
+    .leadership .section-title { color: #fff; font-family: var(--font-display); font-weight: 300; }
+    .quote {
+      margin-top: 32px;
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3vw, 42px);
+      font-weight: 300; font-style: italic; line-height: 1.4;
+      color: rgba(255,255,255,0.95);
+    }
+    .quote-attr {
+      margin-top: 32px; padding-top: 24px;
+      border-top: 3px solid var(--shell-yellow);
+      display: inline-block;
+    }
+    .quote-attr strong {
+      display: block;
+      font-family: var(--font-label);
+      font-size: 13px; font-weight: 600;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--shell-yellow);
+    }
+    .quote-attr span { font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; display: block; }
+    .leader-photo {
+      border-radius: var(--radius); overflow: hidden;
+      box-shadow: 0 24px 48px rgba(0,0,0,0.35);
+      border: 4px solid var(--shell-yellow);
+    }
+    .leader-photo img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+
+    /* ── MISSION ── */
+    .mission {
+      background: var(--bg-deep);
+      text-align: center; padding: 100px 32px;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .mission .section-eyebrow { justify-content: center; }
+    .mission h2 {
+      font-family: var(--font-display);
+      font-size: clamp(34px, 4vw, 54px);
+      font-weight: 300; color: var(--text-white); line-height: 1.15;
+      max-width: 720px; margin: 0 auto;
+    }
+    .mission p {
+      margin: 28px auto 0; max-width: 640px;
+      font-size: 15px; font-weight: 300; color: var(--text-mid); line-height: 1.85;
+    }
+    .mission-divider {
+      margin: 40px auto 0; width: 1px; height: 56px;
+      background: linear-gradient(to bottom, var(--shell-yellow), transparent);
+    }
+
+    /* ── HELP STRIP ── */
+    .help-strip {
+      background: var(--bg-panel); padding: 64px 32px;
+      border-top: 1px solid var(--border);
+    }
+    .help-inner {
+      max-width: var(--max); margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 24px;
+    }
+    .help-inner h3 {
+      font-family: var(--font-display);
+      font-size: 28px; font-weight: 300; color: var(--text-white);
+    }
+    .help-links { display: flex; flex-wrap: wrap; gap: 12px; }
+    .help-links a {
+      padding: 12px 20px; background: var(--bg-muted);
+      border: 1px solid var(--border); border-radius: var(--radius);
+      font-family: var(--font-label);
+      font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+      text-decoration: none;
+      color: var(--text-light); transition: border-color var(--transition), color var(--transition);
+    }
+    .help-links a:hover {
+      border-color: var(--shell-yellow); color: var(--shell-yellow);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg-base); color: rgba(255,255,255,0.75);
+      border-top: 1px solid var(--border);
+      padding: 64px 32px 32px;
+    }
+    .footer-grid {
+      max-width: var(--max); margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      padding-bottom: 48px; border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .footer-brand .logo-text { color: #fff; }
+    .footer-brand .logo-text span { color: rgba(255,255,255,0.5); }
+    .footer-brand p {
+      margin-top: 16px; font-size: 13px; font-weight: 300;
+      line-height: 1.75; max-width: 300px;
+    }
+    .footer-col h4 {
+      font-family: var(--font-label);
+      font-size: 11px; font-weight: 600; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--shell-yellow);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 10px; }
+    .footer-col a {
+      font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.65);
+      text-decoration: none; transition: color var(--transition);
+    }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      max-width: var(--max); margin: 28px auto 0;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px; font-size: 13px;
+    }
+    .footer-legal { display: flex; gap: 24px; }
+    .footer-legal a {
+      color: rgba(255,255,255,0.5); text-decoration: none;
+      transition: color var(--transition);
+    }
+    .footer-legal a:hover { color: #fff; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeLeft {
+      from { opacity: 0; transform: translateX(28px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeLeftCentered {
+      from { opacity: 0; transform: translate(28px, -50%); }
+      to   { opacity: 1; transform: translate(0, -50%); }
+    }
+    @keyframes scrollLine {
+      0%   { opacity: 0; transform: scaleY(0); transform-origin: top; }
+      40%  { opacity: 1; transform: scaleY(1); }
+      80%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* Scroll-reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-eyebrow, .hero h1, .hero-lead, .hero-actions,
+      .hero-scroll, .hero-stats { animation: none; opacity: 1; }
+      .hero-scroll::after { animation: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .hero { padding: 0 32px 80px; min-height: 90vh; }
+      .hero-scroll { display: none; }
+      .hero-stats {
+        position: relative; right: auto; top: auto;
+        flex-direction: row; margin-top: 48px; gap: 16px;
+        animation-name: fadeUp;
+        animation-delay: 1s;
+      }
+      .hero-stat { text-align: left; flex: 1; }
+      .about-grid, .leadership-grid, .company-grid,
+      .producing-asset-panel,
+      .producing-asset-panel--media-right { grid-template-columns: 1fr; }
+      .producing-asset-media,
+      .producing-asset-panel--media-right .producing-asset-media {
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .producing-asset-body { padding: 28px 24px; }
+      .leaders-dual { grid-template-columns: 1fr; }
+      .ops-grid { grid-template-columns: 1fr; }
+      .leader-photo { max-width: 400px; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none; position: fixed; top: var(--nav-h); left: 0; right: 0;
+        background: rgba(12,13,14,0.98); flex-direction: column;
+        padding: 24px 32px 32px; gap: 20px;
+        border-bottom: 1px solid var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: block; }
+      section { padding: 64px 24px; }
+      .timeline::before { left: 24px; }
+      .tm-row { grid-template-columns: 64px 1fr; gap: 24px; }
+      .tm-year { font-size: 22px; text-align: left; }
+      .tm-dot { left: 15px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero-stat { padding: 16px; }
+      .hero-stat strong { font-size: 22px; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 0 24px 64px; }
+      .hero-stats { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header" id="header">
+  <div class="nav-inner">
+    <a class="logo" href="#">
+      <div class="logo-text">35 Gulf Petroleum</div>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#operations">Operations</a></li>
+      <li><a href="#companies">Companies</a></li>
+      <li><a href="#assets">Assets</a></li>
+      <li><a href="#milestones">Milestones</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Northern Gulf Petroleum · Gulf Petroleum Myanmar</p>
+      <h1>Powering <em>Sovereign</em> Energy Futures</h1>
+      <p class="hero-lead">
+        NGP and GPM operate under the umbrella of 35 Gulf Petroleum LLC — Thailand's only independent oil &amp; gas E&amp;P company and operator of the Yetagun gas field in Myanmar.
+      </p>
+      <div class="hero-actions">
+        <a href="#operations" class="btn btn-primary">Our Operations</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong>4M+</strong>
+        <span>Barrels Produced</span>
+      </div>
+      <div class="hero-stat">
+        <strong>79.55%</strong>
+        <span>Yetagun Interest</span>
+      </div>
+      <div class="hero-stat">
+        <strong>5M</strong>
+        <span>Bbls Forecast 2026</span>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span class="ticker-item">Block M-10 PSC Signed <strong>May 2025</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Rossukon First Oil <strong>Nov 2023</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Target Growth <strong>300–600 MMSCFD</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Yetagun Operator <strong>79.55%</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">2026 Sales Forecast <strong>5 Million Bbls</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Block M-10 PSC Signed <strong>May 2025</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Rossukon First Oil <strong>Nov 2023</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Target Growth <strong>300–600 MMSCFD</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">Yetagun Operator <strong>79.55%</strong></span>
+      <span class="ticker-sep">◆</span>
+      <span class="ticker-item">2026 Sales Forecast <strong>5 Million Bbls</strong></span>
+      <span class="ticker-sep">◆</span>
+    </div>
+  </div>
+
+  <section class="about" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">Group Overview</p>
+      <h2 class="section-title reveal"><em>Thirty Five Investment Holding</em><br>Private investments that build sustainable industries</h2>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            Headquartered in the Middle East, with active operations across Asia, Central Asia, Africa, and Europe, the Group's diversified portfolio spans natural resources and energy, advanced manufacturing and autonomous technologies, and digital, agricultural, and urban development ecosystems — forming a connected ecosystem that drives industrial growth and economic resilience.
+          </p>
+          <p>
+            With a disciplined and forward-looking approach, Thirty Five transforms strategic opportunities into tangible impact, fostering the foundations of the next generation of global industries.
+          </p>
+          <div class="sectors reveal">
+            <span class="sector-tag">Mining &amp; Resources</span>
+            <span class="sector-tag">Oil &amp; Gas Refining</span>
+            <span class="sector-tag">Green Energy</span>
+            <span class="sector-tag">Advanced Manufacturing</span>
+            <span class="sector-tag">Autonomous Technologies</span>
+            <span class="sector-tag">Digital Infrastructure</span>
+            <span class="sector-tag">Agri-Food &amp; Bioeconomy</span>
+            <span class="sector-tag">Real Estate &amp; Urban Development</span>
+          </div>
+        </div>
+        <div class="pillars reveal reveal-delay-2">
+          <article class="pillar">
+            <div class="pillar-num">01</div>
+            <div>
+              <h3>Selective Asset Ownership</h3>
+              <p>We invest only where fundamentals are compelling — high-quality reservoirs, proven geology, and defensible acreage positions.</p>
+            </div>
+          </article>
+          <article class="pillar">
+            <div class="pillar-num">02</div>
+            <div>
+              <h3>Efficient Operations</h3>
+              <p>Lean structure with specialist teams — we move quickly, operate precisely, and hold ourselves to the highest safety standards.</p>
+            </div>
+          </article>
+          <article class="pillar">
+            <div class="pillar-num">03</div>
+            <div>
+              <h3>Sustainable Value</h3>
+              <p>Disciplined capital allocation and a patient ownership model designed to deliver durable returns across commodity cycles.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="leadership" id="leadership">
+    <div class="container">
+      <p class="section-eyebrow reveal">Leadership</p>
+      <h2 class="section-title reveal">Message from the <em>Founder &amp; Chairman</em></h2>
+      <div class="leaders-dual">
+        <article class="leader-card reveal">
+          <img src="https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p4_1.jpg" alt="Mr. Chatchai Yenbamroong" loading="lazy" />
+          <blockquote class="quote">
+            <p>At Thirty Five, we believe energy security underpins economic stability and long-term development.</p>
+            <p>Our vision is to be a trusted, long-term partner in the countries where we operate — responsibly developing strategic natural resources to support reliable and resilient energy supply.</p>
+            <p>Operational excellence defines our approach. We combine technical expertise, disciplined capital allocation, and rigorous safety standards to deliver consistent production and efficient field development.</p>
+            <p>We manage each asset with a long-term perspective, focused on reliability, integrity, and responsible operations.</p>
+          </blockquote>
+          <div class="quote-attr">
+            <strong>Mr. Chatchai Yenbamroong</strong>
+            <span>Founder, Thirty Five Investment Holding</span>
+          </div>
+        </article>
+        <article class="leader-card reveal reveal-delay-2">
+          <img src="https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p4_0.jpg" alt="H.E. Dr. Khalid bin Mohammed Al Attiyah" loading="lazy" />
+          <blockquote class="quote">
+            <p>True leadership is defined not by position but by responsibility, by the duty to preserve trust, to advance progress, and to shape legacies that endure beyond our time.</p>
+            <p>Thirty Five was founded upon this conviction.</p>
+            <p>We invest where industry becomes the foundation of nations, in mining, energy, technology, and infrastructure, turning potential into prosperity, and vision into lasting value.</p>
+            <p>What distinguishes Thirty Five is not the scale of its enterprise, but the depth of its purpose: to act with integrity, to build with foresight, and to create impact that transcends generations.</p>
+          </blockquote>
+          <div class="quote-attr">
+            <strong>H.E. Dr. Khalid bin Mohammed Al Attiyah</strong>
+            <span>Chairman of the Board, Thirty Five Investment Holding</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="operations" id="operations">
+    <div class="container">
+      <div class="ops-header reveal">
+        <div>
+          <p class="section-eyebrow">What We Do</p>
+          <h2 class="section-title">Core <em>Operations</em></h2>
+        </div>
+        <a href="#assets" class="btn btn-outline" style="flex-shrink:0;">View All Assets</a>
+      </div>
+      <div class="ops-grid">
+        <div class="op-card reveal">
+          <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=800&q=80" alt="Offshore Drilling" loading="lazy" />
+          <div class="op-card-overlay">
+            <div class="op-tag">Upstream</div>
+            <div class="op-title">Offshore Drilling &amp; Production</div>
+            <div class="op-desc">Mobile offshore production units delivering peak efficiency in deepwater and shelf environments across the Gulf.</div>
+            <div class="op-arrow">Explore</div>
+          </div>
+        </div>
+        <div class="op-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="Exploration" loading="lazy" />
+          <div class="op-card-overlay">
+            <div class="op-tag">Exploration</div>
+            <div class="op-title">Basin &amp; Seismic Evaluation</div>
+            <div class="op-desc">Proprietary 3D seismic interpretation and subsurface modeling to identify the region's next material discoveries.</div>
+            <div class="op-arrow">Explore</div>
+          </div>
+        </div>
+        <div class="op-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80" alt="Logistics" loading="lazy" />
+          <div class="op-card-overlay">
+            <div class="op-tag">Logistics</div>
+            <div class="op-title">Crude Lifting &amp; Export</div>
+            <div class="op-desc">FSO-based crude storage and competitive cargo bidding ensures premium netbacks on every lifting cycle.</div>
+            <div class="op-arrow">Explore</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="companies" id="companies">
+    <div class="container">
+      <p class="section-eyebrow reveal">Introduction</p>
+      <h2 class="section-title reveal">NGP &amp; <em>GPM</em></h2>
+      <div class="company-grid">
+        <article class="company-card reveal">
+          <h3>Northern Gulf Petroleum (NGP)</h3>
+          <ul>
+            <li>Established in 2004 — Thailand's only independent oil &amp; gas exploration and production company.</li>
+            <li>Oil discoveries in Rossukon field, Block G6/48 in 2009; first oil from Rossukon in November 2023.</li>
+            <li>Cumulative production over 4 million bbls as of January 2026; 2026 forecast sales volume of 5 million bbls.</li>
+          </ul>
+        </article>
+        <article class="company-card reveal reveal-delay-1">
+          <h3>Gulf Petroleum Myanmar (GPM)</h3>
+          <ul>
+            <li>Operator of the Yetagun gas field since 2022 with a 79.55% participation interest.</li>
+            <li>Exports natural gas to Thailand via a 204 km pipeline under a 35-year GSA with PTT at ~$10 / MMBtu.</li>
+            <li>Awarded offshore Block M-10 in 2025 — first block since 2013 — to develop six gas discoveries (3–6 Tcf estimated).</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="assets" id="assets">
+    <div class="container">
+      <p class="section-eyebrow reveal">Producing Assets Overview</p>
+      <h2 class="section-title reveal">Producing <em>Assets</em></h2>
+
+      <article class="producing-asset reveal" id="assets-rossukon">
+        <div class="producing-asset-header">
+          <p class="section-eyebrow">Thailand</p>
+          <h3 class="producing-asset-title">Rossukon <em>Field G6/48</em></h3>
+        </div>
+        <div class="producing-asset-panel">
+          <div class="producing-asset-media">
+            <figure>
+              <div class="figure-img figure-img--photo">
+                <img src="https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p8_0.jpg" alt="Rossukon field offshore Thailand" loading="lazy" />
+              </div>
+              <figcaption>Rossukon in Thailand — Northern Gulf Petroleum</figcaption>
+            </figure>
+            <figure>
+              <div class="figure-img figure-img--map">
+                <img src="https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/pdf-images/rossukon_2.png" alt="Rossukon field location map — Block G6/48" loading="lazy" />
+              </div>
+              <figcaption>Block G6/48 — Nakhon Si Thammarat · Rossukon · Songkhla</figcaption>
+            </figure>
+          </div>
+          <div class="producing-asset-body">
+            <p class="location-note">
+              Block G6/48, 259 km (161 miles) northeast of Songkhla, Thailand. Covers 87.74 sq. km with a water depth of 60–65 meters. Operated by Northern Gulf Petroleum.
+            </p>
+            <div class="spec-group">
+              <h4>Concession Contract Term</h4>
+              <ul>
+                <li>Concession Start Date: 8-Jan-2007</li>
+                <li>Concession End Date: 7-Jan-2036</li>
+              </ul>
+            </div>
+            <div class="spec-group">
+              <h4>Key Development</h4>
+              <ul>
+                <li>First Oil Date: 13-Nov-2023</li>
+              </ul>
+            </div>
+            <div class="spec-group">
+              <h4>Rossukon Development</h4>
+              <ul>
+                <li>Mobile Offshore Production Unit (MOPU)
+                  <ul>
+                    <li>Operated as a normally manned facility</li>
+                  </ul>
+                </li>
+                <li>Floating Storage and Offloading (FSO)
+                  <ul>
+                    <li>700,000 bbls capacity</li>
+                    <li>Spread mooring system</li>
+                  </ul>
+                </li>
+                <li>2× 6″ subsea flexible pipelines for crude and water transfer between MOPU and FSO</li>
+                <li>Crude export via Ship-to-Ship transfer through 10″ export hose</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="producing-asset reveal" id="assets-yetagun">
+        <div class="producing-asset-header">
+          <p class="section-eyebrow">Myanmar</p>
+          <h3 class="producing-asset-title">Yetagun <em>in Myanmar</em></h3>
+        </div>
+        <div class="producing-asset-panel producing-asset-panel--media-right">
+          <div class="producing-asset-body">
+            <p class="location-note">
+              Multi-platform gas development in the Gulf of Martaban, operated by Gulf Petroleum Myanmar with export infrastructure to Thailand.
+            </p>
+            <div class="spec-group">
+              <h4>Yetagun-A (Wellhead Platform)</h4>
+              <ul>
+                <li>4 legged with 20 well slots</li>
+              </ul>
+            </div>
+            <div class="spec-group">
+              <h4>Yetagun-B (Production Platform)</h4>
+              <ul>
+                <li>8 legged with process facilities comprising separation, gas dehydration, gas hydrocarbon dew point control, export gas compression and condensate stabilization</li>
+                <li>88 Beds living quarters</li>
+                <li>24″ × 202 km gas export pipeline to POC</li>
+                <li>6″ × 2.5 km condensate export pipeline to FSO</li>
+              </ul>
+            </div>
+            <div class="spec-group">
+              <h4>Yetagun-C (Booster Compressor Platform)</h4>
+              <ul>
+                <li>4 legged with process facilities comprising separation, cooling and booster compression</li>
+              </ul>
+            </div>
+            <div class="spec-group">
+              <h4>Yetagun-D (Remote Satellite Platform)</h4>
+              <ul>
+                <li>4-legged with 4 well slots</li>
+                <li>4 Beds living quarter and Helideck</li>
+                <li>10″ × 11.2 km pipeline to Yetagun C</li>
+              </ul>
+            </div>
+          </div>
+          <div class="producing-asset-media">
+            <figure>
+              <div class="figure-img figure-img--diagram">
+                <img src="https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/yetagun.png" alt="Yetagun gas field platforms — Yetagun-A, B, C and D" loading="lazy" />
+              </div>
+              <figcaption>Yetagun-A · Yetagun-B · Yetagun-C · Yetagun-D</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="milestones" id="milestones">
+    <div class="container">
+      <p class="section-eyebrow reveal">Our Journey</p>
+      <h2 class="section-title reveal">Key <em>Milestones</em></h2>
+      <div class="timeline">
+        <article class="tm-row reveal">
+          <div class="tm-year">2004</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>NGP Founded</h3>
+            <p>Established in 2004 as Thailand's only independent oil &amp; gas exploration and production company, backed entirely by equity capital.</p>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2007</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>Block G6/48 Concession</h3>
+            <p>Rossukon concession awarded — term from 8 January 2007 to 7 January 2036, covering 87.74 sq. km in the Gulf of Thailand.</p>
+            <span class="badge">G6/48</span>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2009</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>Rossukon Discoveries</h3>
+            <p>Oil discoveries declared in Rossukon field, Block G6/48 — establishing NGP's core production base in the Gulf of Thailand.</p>
+            <span class="badge">Rossukon Field</span>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2022</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>Yetagun Operatorship — GPM</h3>
+            <p>Gulf Petroleum Myanmar became operator of the Yetagun gas field with a 79.55% participation interest, exporting gas to Thailand under a 35-year GSA with PTT.</p>
+            <span class="badge">79.55% Interest</span>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2023</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>Rossukon First Oil</h3>
+            <p>First oil from Rossukon field achieved 13 November 2023 — from concept to production in six months after full operatorship.</p>
+            <span class="badge">13 Nov 2023</span>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2025</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>Block M-10 Awarded</h3>
+            <p>First offshore block awarded to GPM since 2013; Production Sharing Contract signed with MOGE on 29 May 2025 for six gas discoveries (3–6 Tcf).</p>
+            <span class="badge">Block M-10 PSC</span>
+          </div>
+        </article>
+        <article class="tm-row reveal">
+          <div class="tm-year">2026</div>
+          <div class="tm-dot"></div>
+          <div class="tm-content">
+            <h3>4M+ Barrels Produced</h3>
+            <p>Cumulative Rossukon production exceeds 4 million barrels; 2026 forecast sales volume of 5 million barrels with continued field expansion.</p>
+            <span class="badge">5M Bbls Forecast</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <div class="container reveal">
+      <p class="section-eyebrow">Our Mission</p>
+      <h2>Dedicated to Energy Security.<br>Driving Economic Prosperity.</h2>
+      <div class="mission-divider"></div>
+      <p>
+        We believe energy underpins every layer of economic development. Through disciplined investment, a lean operating model, and an unwavering long-term mindset, Northern Gulf Petroleum delivers real value for stakeholders — and for the nations we serve.
+      </p>
+    </div>
+  </section>
+
+  <section class="help-strip" id="contact">
+    <div class="help-inner">
+      <h3>How can we help?</h3>
+      <div class="help-links">
+        <a href="#">Head Office</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Media Enquiries</a>
+        <a href="Gulf Petrolium PROFILE .pdf" target="_blank" rel="noopener">Company Profile (PDF)</a>
+        <a href="#">Careers</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="#" style="text-decoration:none;">
+        <div class="logo-text">35 Gulf Petroleum</div>
+      </a>
+      <p>Privately advancing Southeast Asia's energy future through focused investment, disciplined operations, and long-term ownership.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#">Our Mission</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Operations</h4>
+      <ul>
+        <li><a href="#operations">Core Operations</a></li>
+        <li><a href="#assets">Producing Assets</a></li>
+        <li><a href="#milestones">Milestones</a></li>
+        <li><a href="Gulf Petrolium PROFILE .pdf" target="_blank" rel="noopener">Company Profile</a></li>
+        <li><a href="#">HSE Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="#">Head Office</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Media Enquiries</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Northern Gulf Petroleum PTE. LTD. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // Scroll reveal (matches GP_dark)
+  const reveals = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  reveals.forEach(el => revealObserver.observe(el));
+</script>
+</body>
+</html>
