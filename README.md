@@ -17,4 +17,4 @@ Operations cards use Unsplash URLs embedded in the HTML.
 
 ## Standalone HTML
 
-Send customers `index.html` only. Image paths point at this repo on GitHub (`raw.githubusercontent.com`).
+Send customers **`index.html` only** (~4 MB). All images are embedded inside the file (base64), so they display when the file is opened locally on any computer — no internet connection or `assets` folder required.
