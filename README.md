@@ -17,6 +17,10 @@ Operations cards use Unsplash URLs embedded in the HTML.
 
 ## Standalone HTML
 
-Send customers **`index.html` only** (~4 MB). All images are embedded inside the file and loaded via JavaScript, so they display when the file is opened locally on any computer — no internet connection or `assets` folder required.
+Send customers **`index.html` only** (~1.2 MB). All images are embedded directly in the HTML (no JavaScript required), so they work when the file is opened locally — including on iPhone.
 
-To rebuild after editing the site: `python build_standalone.py`
+**iPhone tip:** If images still do not appear, the file may be opening in **Quick Look preview** (from Mail or Files), which does not fully support HTML. Ask the recipient to tap **Share → Open in Safari**, or send this link instead:
+
+**https://qailab-qa.github.io/35gulfpetroleum/**
+
+To rebuild after editing: `python build_standalone.py`
