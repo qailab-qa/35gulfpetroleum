@@ -17,4 +17,6 @@ Operations cards use Unsplash URLs embedded in the HTML.
 
 ## Standalone HTML
 
-Send customers **`index.html` only** (~4 MB). All images are embedded inside the file (base64), so they display when the file is opened locally on any computer — no internet connection or `assets` folder required.
+Send customers **`index.html` only** (~4 MB). All images are embedded inside the file and loaded via JavaScript, so they display when the file is opened locally on any computer — no internet connection or `assets` folder required.
+
+To rebuild after editing the site: `python build_standalone.py`
