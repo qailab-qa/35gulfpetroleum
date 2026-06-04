@@ -21,7 +21,7 @@ html = subprocess.check_output(
 IMAGES = {
     "hero": ("assets/images/p1_0.jpg", "image/jpeg", {"max_width": 1920, "jpeg_quality": 82}),
     "p4_1": ("assets/images/p4_1.jpg", "image/jpeg", {"max_width": 900, "jpeg_quality": 82}),
-    "p4_0": ("assets/images/p4_0.jpg", "image/jpeg", {"max_width": 900, "jpeg_quality": 82}),
+    "qatar_flag": ("assets/images/qatar-flag.png", "image/jpeg", {"max_width": 640, "jpeg_quality": 90, "force_jpeg": True}),
     "ops_drilling": ("assets/images/ops-drilling.jpg", "image/jpeg", {"max_width": 900, "jpeg_quality": 80}),
     "ops_exploration": ("assets/images/ops-exploration.jpg", "image/jpeg", {"max_width": 900, "jpeg_quality": 80}),
     "ops_logistics": ("assets/images/ops-logistics.jpg", "image/jpeg", {"max_width": 900, "jpeg_quality": 80}),
@@ -33,7 +33,7 @@ IMAGES = {
 URL_TO_KEY = {
     "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p1_0.jpg": "hero",
     "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p4_1.jpg": "p4_1",
-    "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p4_0.jpg": "p4_0",
+    "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/qatar-flag.png": "qatar_flag",
     "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/p8_0.jpg": "p8_0",
     "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/pdf-images/rossukon_2.png": "rossukon_2",
     "https://raw.githubusercontent.com/qailab-qa/35gulfpetroleum/main/assets/images/yetagun.png": "yetagun",
